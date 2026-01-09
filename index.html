@@ -34,7 +34,7 @@
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
 
     h1, h2, h3 {
@@ -43,15 +43,15 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 5px;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 22px;
       border-bottom: 1px solid #333;
       padding-bottom: 5px;
-      margin-top: 40px;
+      margin-top: 35px;
     }
 
     h3 {
@@ -64,18 +64,23 @@
     }
 
     .contact {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       font-size: 15px;
       color: #cccccc;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
 
     .contact a {
       color: #4da3ff;
       text-decoration: none;
+      word-break: break-word;
     }
 
     ul {
       margin: 10px 0 20px 20px;
+      padding: 0;
     }
 
     li {
@@ -85,14 +90,27 @@
     .tagline {
       font-size: 16px;
       color: #bdbdbd;
+      margin-bottom: 15px;
     }
 
     .footer {
-      margin-top: 60px;
-      font-size: 12px;
+      margin-top: 50px;
+      font-size: 13px;
       color: #777;
       text-align: center;
+      border-top: 1px solid #333;
+      padding-top: 10px;
     }
+
+    /* Mobile responsiveness */
+    @media only screen and (max-width: 600px) {
+      h1 { font-size: 28px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 16px; }
+      .container { padding: 20px 15px; }
+      .contact { font-size: 14px; }
+    }
+
   </style>
 
   <!-- Structured Data for SEO -->
@@ -102,10 +120,13 @@
     "@type": "Person",
     "name": "Alexander Elbanna",
     "url": "https://elbanna.xyz",
-    "email": "seashells953@gmail.com",
-    "telephone": "813-501-2129",
+    "email": "support@gecko.mn",
     "jobTitle": "Founder, Systems Architect, Blockchain & Infrastructure Strategist",
-    "sameAs": ["https://github.com/X1COIN/X1COIN"],
+    "sameAs": [
+      "https://github.com/X1COIN/X1COIN",
+      "https://github.com/GeckoProjectMN/GeckoProject",
+      "https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm"
+    ],
     "description": "Founder and technologist leading next-generation blockchain and hashing concepts under development 2024-2026. Expert in distributed systems, mining, security, and infrastructure."
   }
   </script>
@@ -122,10 +143,11 @@
 
     <div class="contact">
       📍 United States<br>
-      📞 813-501-2129<br>
-      📧 <a href="mailto:seashells953@gmail.com">seashells953@gmail.com</a><br>
+      📧 <a href="mailto:support@gecko.mn">support@gecko.mn</a><br>
       🌐 <a href="https://elbanna.xyz" target="_blank">elbanna.xyz</a><br>
-      💻 <a href="https://github.com/X1COIN/X1COIN" target="_blank">GitHub: X1COIN/X1COIN</a>
+      💻 <a href="https://github.com/X1COIN/X1COIN" target="_blank">GitHub: X1COIN/X1COIN</a><br>
+      💻 <a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GitHub: GeckoProjectMN/GeckoProject</a><br>
+      📸 <a href="https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm" target="_blank">Instagram</a>
     </div>
 
     <h2>Executive Summary</h2>
@@ -212,6 +234,7 @@
     <h2>Selected Projects & GitHub</h2>
     <ul>
       <li><a href="https://github.com/X1COIN/X1COIN" target="_blank">X1COIN</a> – Blockchain protocol development, mining optimization, and infrastructure architecture (2024–2026)</li>
+      <li><a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GeckoProjectMN/GeckoProject</a> – Additional blockchain and infrastructure development projects</li>
     </ul>
 
     <h2>Product & Brand Governance</h2>
@@ -242,6 +265,9 @@
     </p>
 
     <div class="footer">
+      💻 <a href="https://github.com/X1COIN/X1COIN" target="_blank">X1COIN</a> | 
+      💻 <a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GeckoProject</a> | 
+      📸 <a href="https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm" target="_blank">Instagram</a><br>
       © Alexander Elbanna – All Rights Reserved
     </div>
 
