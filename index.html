@@ -1,277 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexander Elbanna | Resume & Blockchain Concept</title>
-  <meta name="description" content="Alexander Elbanna – Founder, Systems Architect, Blockchain & Infrastructure Strategist. Developer of next-generation hashing and blockchain concepts in development 2024-2026.">
-  <meta name="keywords" content="Alexander Elbanna, blockchain, cryptocurrency, mining, hashing, distributed systems, security, decentralized finance, infrastructure, crypto strategist">
-  <meta name="author" content="Alexander Elbanna">
-
-  <!-- Open Graph / Social SEO -->
-  <meta property="og:title" content="Alexander Elbanna | Founder & Blockchain Innovator">
-  <meta property="og:description" content="Founder, systems architect, and blockchain strategist. Leading next-generation blockchain and hashing concepts under development 2024-2026.">
+  <meta charset="UTF-8" />
+  <title>Elbanna Web Design & Development | Tampa, FL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elbanna Web Design & Development in Tampa, FL 33609. Professional web design, development, and hosting starting at $199. Local Tampa web designer." />  <!-- Local SEO -->  <meta name="keywords" content="Tampa web design, Tampa web developer, web design Tampa FL, Elbanna Web Design, website design 33609">
+  <meta name="geo.region" content="US-FL">
+  <meta name="geo.placename" content="Tampa">
+  <meta name="geo.position" content="27.9506;-82.4572">  <!-- Social Sharing -->  <meta property="og:title" content="Elbanna Web Design & Development | Tampa, FL">
+  <meta property="og:description" content="Luxury black-themed websites starting at $199. Based in Tampa, Florida.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://elbanna.xyz">
-  <meta property="og:image" content="https://elbanna.xyz/assets/og-image.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Alexander Elbanna | Blockchain Innovator">
-  <meta name="twitter:description" content="Founder, systems architect, and blockchain strategist. Next-generation blockchain and hashing concept in development 2024-2026.">
-  <meta name="twitter:image" content="https://elbanna.xyz/assets/og-image.jpg">
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.6;
+  <meta property="og:locale" content="en_US">  <meta name="twitter:card" content="summary_large_image">  <!-- Google Fonts (Clean Armani / Christian Grey–style look) -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  <style>
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #e5e7eb;
+      overflow-x: hidden;
     }
 
     h1, h2, h3 {
-      color: #ffffff;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Parallax Sections */
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      border: 1px solid #fff;
+      font-size: 14px;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* Content Sections */
+    .content {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #cbd5f5;
+    }
+
+    /* Pricing */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .price-box {
+      border: 1px solid #1f2937;
+      padding: 30px;
+      background: #020617;
+    }
+
+    .price-box h3 {
+      font-size: 22px;
       margin-bottom: 10px;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
+    .price {
+      font-size: 36px;
+      margin: 20px 0;
     }
 
-    h2 {
-      font-size: 22px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
-      margin-top: 35px;
+    .price small {
+      font-size: 14px;
+      color: #94a3b8;
     }
 
-    h3 {
-      font-size: 18px;
-      margin-top: 20px;
-    }
-
-    p {
-      margin: 8px 0;
-    }
-
-    .contact {
-      margin-bottom: 25px;
-      font-size: 15px;
-      color: #cccccc;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .contact a {
-      color: #4da3ff;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    ul {
-      margin: 10px 0 20px 20px;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .tagline {
-      font-size: 16px;
-      color: #bdbdbd;
-      margin-bottom: 15px;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 13px;
-      color: #777;
+    /* Footer */
+    footer {
+      padding: 40px 20px;
       text-align: center;
-      border-top: 1px solid #333;
-      padding-top: 10px;
+      background: #020617;
+      font-size: 14px;
+      color: #94a3b8;
     }
 
-    /* Mobile responsiveness */
-    @media only screen and (max-width: 600px) {
-      h1 { font-size: 28px; }
-      h2 { font-size: 20px; }
-      h3 { font-size: 16px; }
-      .container { padding: 20px 15px; }
-      .contact { font-size: 14px; }
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 38px; }
+      .about-wrapper { flex-direction: column; }
     }
 
-  </style>
+    /* About Me 3D Section */
+    .about-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      perspective: 1200px;
+    }
 
-  <!-- Structured Data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alexander Elbanna",
-    "url": "https://elbanna.xyz",
-    "email": "support@gecko.mn",
-    "jobTitle": "Founder, Systems Architect, Blockchain & Infrastructure Strategist",
-    "sameAs": [
-      "https://github.com/X1COIN/X1COIN",
-      "https://github.com/GeckoProjectMN/GeckoProject",
-      "https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm"
-    ],
-    "description": "Founder and technologist leading next-generation blockchain and hashing concepts under development 2024-2026. Expert in distributed systems, mining, security, and infrastructure."
-  }
-  </script>
+    .about-card {
+      background: #020617;
+      padding: 30px;
+      max-width: 420px;
+      transform-style: preserve-3d;
+      transform: rotateY(-8deg);
+      transition: transform 0.5s ease;
+      border: 1px solid #1f2937;
+    }
 
-</head>
-<body>
+    .about-card:hover {
+      transform: rotateY(0deg);
+    }
 
-  <div class="container">
+    .about-image {
+      width: 260px;
+      height: 260px;
+      background: url('profile.jpg') center/cover no-repeat;
+      transform: rotateY(10deg);
+      border: 1px solid #1f2937;
+    }
 
-    <h1>Alexander Elbanna</h1>
-    <div class="tagline">
-      Founder | Systems Architect | Blockchain & Infrastructure Strategist
+    }
+  </style></head>
+<body>  <!-- HERO -->  <section class="hero parallax">
+    <div class="content">
+      <h1>Elbanna Web Design<br>& Development</h1>
+      <p>
+        Premium, modern websites crafted with precision, performance, and elegance.
+        Based in Tampa, Florida — serving clients nationwide.
+      </p>
+      <a href="#pricing" class="button">VIEW PRICING</a>
+    </div>
+  </section>  <!-- ABOUT -->  <section>
+    <div class="content">
+      <h2>Elegant. Fast. Reliable.</h2>
+      <p>
+        Elbanna Web Design & Development specializes in clean, professional websites
+        built for speed, SEO, and long-term scalability. Every site is handcrafted —
+        no templates, no shortcuts.
+      </p>
+      <p>
+        📍 Tampa, FL 33609
+      </p>
+    </div>
+  </section>  <!-- ABOUT ME -->  <section>
+    <div class="content">
+      <h2>About the Founder</h2>
+      <div class="about-wrapper">
+        <div class="about-image"></div>
+        <div class="about-card">
+          <p>
+            I’m Alexander Elbanna, founder of Elbanna Web Design & Development.
+            I specialize in building fast, elegant, and secure websites for businesses
+            that want a professional online presence without agency bloat.
+          </p>
+          <p>
+            Every project is built by hand — no templates, no outsourcing, no page builders.
+            Just clean code, performance-focused design, and long-term reliability.
+          </p>
+          <p>
+            📍 Tampa, Florida 33609
+          </p><!-- Social Links -->
+      <p>
+        <a href="#">Facebook</a> •
+        <a href="#">Twitter / X</a> •
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+  </section>  <!-- PRICING -->  <section id="pricing">
+    <div class="content">
+      <h2>Simple Pricing</h2>
+      <p>Transparent pricing with no hidden fees.</p><div class="pricing">
+    <div class="price-box">
+      <h3>Starter Website</h3>
+      <div class="price">$199</div>
+      <p>One-page professional website</p>
+      <p>Mobile responsive</p>
+      <p>SEO-ready structure</p>
     </div>
 
-    <div class="contact">
-      📍 United States<br>
-      📧 <a href="mailto:support@gecko.mn">support@gecko.mn</a><br>
-      🌐 <a href="https://elbanna.xyz" target="_blank">elbanna.xyz</a><br>
-      💻 <a href="https://github.com/X1COIN/X1COIN" target="_blank">GitHub: X1COIN/X1COIN</a><br>
-      💻 <a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GitHub: GeckoProjectMN/GeckoProject</a><br>
-      📸 <a href="https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm" target="_blank">Instagram</a>
+    <div class="price-box">
+      <h3>Hosting</h3>
+      <div class="price">$20 <small>/month</small></div>
+      <p>Fast global hosting</p>
+      <p>SSL & basic security</p>
+      <p>Ongoing support</p>
     </div>
-
-    <h2>Executive Summary</h2>
-    <p>
-      Visionary technologist and founder with hands-on experience in blockchain architecture,
-      distributed systems, mining infrastructure, and security-first financial design.
-      Proven ability to take projects from concept to production, including protocol design,
-      mining optimization, governance strategy, and public-facing infrastructure.
-    </p>
-    <p>
-      Known for operating independently, solving complex system failures under pressure,
-      and building resilient, censorship-resistant systems designed for long-term value
-      rather than short-term speculation.
-    </p>
-
-    <h2>Current Status</h2>
-    <p>
-      Currently homeless and actively seeking employment opportunities in <strong>Tampa, FL</strong>. 
-      Open to full-time, part-time, or contract roles where I can apply my expertise in blockchain, 
-      systems architecture, and infrastructure development.
-    </p>
-
-    <h2>Core Competencies</h2>
-    <ul>
-      <li>Blockchain Architecture & Protocol Design</li>
-      <li>Cryptocurrency Mining (CPU & GPU Optimization)</li>
-      <li>Distributed Systems & DeFi Infrastructure</li>
-      <li>Tokenomics & Governance Strategy</li>
-      <li>Web Infrastructure (Cloudflare, GitHub Pages, DNS)</li>
-      <li>Security-First System Design</li>
-      <li>Hardware Performance Tuning (Ryzen, NVIDIA GPUs)</li>
-      <li>Technical Documentation & Whitepapers</li>
-      <li>Founder-Led Product & Brand Development</li>
-      <li>Regulatory-Aware Financial Structuring</li>
-    </ul>
-
-    <h2>Founder & Lead Architect</h2>
-    <h3>Elbanna.xyz / Elbanna Enterprises (2024 – Present)</h3>
-    <ul>
-      <li>Founded and operate a private technology platform focused on next-generation financial systems and sovereign digital infrastructure.</li>
-      <li>Designed and evaluated blockchain systems including SHA-256 and CPU-focused architectures aligned with “one CPU, one vote” principles.</li>
-      <li>Led mining infrastructure strategy optimizing GhostRider and K-series algorithms across CPU and GPU environments.</li>
-      <li>Built and deployed production websites using Cloudflare Pages, GitHub Pages, and custom DNS configurations.</li>
-      <li>Recovered and rebuilt compromised or sabotaged web infrastructure under hostile conditions.</li>
-      <li>Authored technical documentation covering liquidity models, governance mechanics, and ecosystem sustainability.</li>
-      <li>Developed security-centric system designs incorporating Proof-of-Useful-Work, AI monitoring, zero-knowledge privacy, and quantum-resistant concepts.</li>
-      <li>Personally verify and approve products and systems under the Elbanna brand with zero outsourcing tolerance.</li>
-    </ul>
-
-    <h2>Next-Generation Blockchain & Hashing Concept</h2>
-    <p>
-      From 2024–2026, leading the development of a cutting-edge blockchain and hashing framework
-      designed to address the key challenges of decentralized finance, including:
-    </p>
-    <ul>
-      <li>Enhanced network security through novel cryptographic and hashing protocols.</li>
-      <li>Energy-efficient and CPU-focused consensus mechanisms to democratize participation.</li>
-      <li>Scalable, modular architecture designed for integration with future AI and quantum-resilient systems.</li>
-      <li>Privacy-preserving and zero-knowledge proof capabilities to protect user data.</li>
-      <li>Adaptive governance frameworks allowing fair, decentralized decision-making while resisting centralization.</li>
-      <li>Proof-of-Useful-Work concepts to ensure computational work contributes real-world value beyond mining.</li>
-    </ul>
-    <p>
-      This system is currently in conceptual development, establishing foundational principles and early prototypes to guide next-generation blockchain technology.
-    </p>
-
-    <h2>Blockchain & Mining Systems Specialist</h2>
-    <ul>
-      <li>Configured and optimized XMRig and CPU mining stacks for sustained performance without system instability.</li>
-      <li>Balanced hashrate, thermals, power efficiency, and system usability across production environments.</li>
-      <li>Analyzed circulating supply, emissions schedules, and reward structures to detect economic inconsistencies.</li>
-      <li>Designed accumulation and liquidity-aware strategies based on real market mechanics.</li>
-      <li>Evaluated algorithmic fairness and resistance to ASIC/GPU centralization.</li>
-    </ul>
-
-    <h2>Web & Infrastructure Engineering</h2>
-    <ul>
-      <li>Deployed static and dynamic websites using Cloudflare Pages and GitHub repositories.</li>
-      <li>Managed DNS, domain verification, and hosting transitions.</li>
-      <li>Produced clean, optimized HTML with long-term maintainability.</li>
-      <li>Planned future integrations for swaps, wallets, and backend expansion.</li>
-    </ul>
-
-    <h2>Selected Projects & GitHub</h2>
-    <ul>
-      <li><a href="https://github.com/X1COIN/X1COIN" target="_blank">X1COIN</a> – Blockchain protocol development, mining optimization, and infrastructure architecture (2024–2026)</li>
-      <li><a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GeckoProjectMN/GeckoProject</a> – Additional blockchain and infrastructure development projects</li>
-    </ul>
-
-    <h2>Product & Brand Governance</h2>
-    <ul>
-      <li>Established strict standards for U.S.-based manufacturing and verification.</li>
-      <li>Designed R&D frameworks to build durable, safe, and independent products.</li>
-      <li>Led brand strategy focused on trust, strength, protection, and longevity.</li>
-    </ul>
-
-    <h2>Education & Continuous Learning</h2>
-    <p>
-      Advanced self-directed study in blockchain consensus, cryptography,
-      distributed computing, and economic systems through real-world implementation.
-    </p>
-
-    <h2>Leadership Philosophy</h2>
-    <ul>
-      <li>Build systems that function in reality, not theory</li>
-      <li>Security and integrity before growth</li>
-      <li>Long-term dominance over short-term hype</li>
-      <li>Founder-level accountability</li>
-    </ul>
-
-    <h2>Availability</h2>
-    <p>
-      Open to founder-level technical roles, infrastructure leadership,
-      strategic advisory positions, and high-trust, high-impact projects.
-    </p>
-
-    <div class="footer">
-      💻 <a href="https://github.com/X1COIN/X1COIN" target="_blank">X1COIN</a> | 
-      💻 <a href="https://github.com/GeckoProjectMN/GeckoProject" target="_blank">GeckoProject</a> | 
-      📸 <a href="https://www.instagram.com/alexanderelbanna?igsh=N2J4a21jM3V4ZWdm" target="_blank">Instagram</a><br>
-      © Alexander Elbanna – All Rights Reserved
-    </div>
-
   </div>
 
-</body>
+  <!-- PAYMENT BUTTONS -->
+  <p style="margin-top:40px;">Checkout Options</p>
+  <a href="#" class="button">Pay with PayPal</a>
+  <a href="#" class="button">Pay with Stripe</a>
+</div>
+
+  </section>  <!-- CTA -->  <section>
+    <div class="content">
+      <h2>Ready to Get Started?</h2>
+      <p>
+        Let’s build something clean, fast, and timeless.
+      </p>
+      <a href="mailto:support@elbanna.com" class="button">CONTACT US</a>
+    </div>
+  </section>  <!-- FOOTER -->  <footer>
+    © 2026 Elbanna Web Design & Development<br />
+    Tampa, Florida 33609
+  </footer></body>
 </html>
