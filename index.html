@@ -1,266 +1,176 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Elbanna Web Design & Development | Tampa, FL</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Elbanna Web Design & Development in Tampa, FL 33609. Professional web design, development, and hosting starting at $199. Local Tampa web designer." />  <!-- Local SEO -->  <meta name="keywords" content="Tampa web design, Tampa web developer, web design Tampa FL, Elbanna Web Design, website design 33609">
-  <meta name="geo.region" content="US-FL">
-  <meta name="geo.placename" content="Tampa">
-  <meta name="geo.position" content="27.9506;-82.4572">  <!-- Social Sharing -->  <meta property="og:title" content="Elbanna Web Design & Development | Tampa, FL">
-  <meta property="og:description" content="Luxury black-themed websites starting at $199. Based in Tampa, Florida.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">  <meta name="twitter:card" content="summary_large_image">  <!-- Google Fonts (Clean Armani / Christian Grey–style look) -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+  <meta charset="UTF-8">
+  <title>Alexander Elbanna – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
       color: #e5e7eb;
-      overflow-x: hidden;
+      margin: 0;
+      padding: 40px;
     }
 
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 1px;
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #020617;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 6px;
+      margin-top: 35px;
+    }
+
+    h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 6px 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 10px 0 0 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin: 5px 5px 0 0;
+      font-size: 13px;
     }
 
     a {
-      color: #fff;
+      color: #38bdf8;
       text-decoration: none;
     }
 
-    /* Parallax Sections */
-    section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 20px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .parallax {
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.7;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 32px;
-      border: 1px solid #fff;
-      font-size: 14px;
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    /* Content Sections */
-    .content {
-      max-width: 1000px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .content h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .content p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: 20px;
-      color: #cbd5f5;
-    }
-
-    /* Pricing */
-    .pricing {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+    .footer {
       margin-top: 40px;
-    }
-
-    .price-box {
-      border: 1px solid #1f2937;
-      padding: 30px;
-      background: #020617;
-    }
-
-    .price-box h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-size: 36px;
-      margin: 20px 0;
-    }
-
-    .price small {
-      font-size: 14px;
+      font-size: 13px;
       color: #94a3b8;
-    }
-
-    /* Footer */
-    footer {
-      padding: 40px 20px;
       text-align: center;
-      background: #020617;
-      font-size: 14px;
-      color: #94a3b8;
     }
+  </style>
+</head>
+<body>
 
-    /* Mobile */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 38px; }
-      .about-wrapper { flex-direction: column; }
-    }
+<div class="container">
 
-    /* About Me 3D Section */
-    .about-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 50px;
-      perspective: 1200px;
-    }
-
-    .about-card {
-      background: #020617;
-      padding: 30px;
-      max-width: 420px;
-      transform-style: preserve-3d;
-      transform: rotateY(-8deg);
-      transition: transform 0.5s ease;
-      border: 1px solid #1f2937;
-    }
-
-    .about-card:hover {
-      transform: rotateY(0deg);
-    }
-
-    .about-image {
-      width: 260px;
-      height: 260px;
-      background: url('profile.jpg') center/cover no-repeat;
-      transform: rotateY(10deg);
-      border: 1px solid #1f2937;
-    }
-
-    }
-  </style></head>
-<body>  <!-- HERO -->  <section class="hero parallax">
-    <div class="content">
-      <h1>Elbanna Web Design<br>& Development</h1>
-      <p>
-        Premium, modern websites crafted with precision, performance, and elegance.
-        Based in Tampa, Florida — serving clients nationwide.
-      </p>
-      <a href="#pricing" class="button">VIEW PRICING</a>
+  <div class="header">
+    <div>
+      <h1>Alexander Elbanna</h1>
+      <p><strong>Founder • Blockchain Architect • Web Developer</strong></p>
     </div>
-  </section>  <!-- ABOUT -->  <section>
-    <div class="content">
-      <h2>Elegant. Fast. Reliable.</h2>
-      <p>
-        Elbanna Web Design & Development specializes in clean, professional websites
-        built for speed, SEO, and long-term scalability. Every site is handcrafted —
-        no templates, no shortcuts.
-      </p>
-      <p>
-        📍 Tampa, FL 33609
-      </p>
-    </div>
-  </section>  <!-- ABOUT ME -->  <section>
-    <div class="content">
-      <h2>About the Founder</h2>
-      <div class="about-wrapper">
-        <div class="about-image"></div>
-        <div class="about-card">
-          <p>
-            I’m Alexander Elbanna, founder of Elbanna Web Design & Development.
-            I specialize in building fast, elegant, and secure websites for businesses
-            that want a professional online presence without agency bloat.
-          </p>
-          <p>
-            Every project is built by hand — no templates, no outsourcing, no page builders.
-            Just clean code, performance-focused design, and long-term reliability.
-          </p>
-          <p>
-            📍 Tampa, Florida 33609
-          </p><!-- Social Links -->
-      <p>
-        <a href="#">Facebook</a> •
-        <a href="#">Twitter / X</a> •
-        <a href="#">Instagram</a>
-      </p>
-    </div>
-  </div>
-</div>
-
-  </section>  <!-- PRICING -->  <section id="pricing">
-    <div class="content">
-      <h2>Simple Pricing</h2>
-      <p>Transparent pricing with no hidden fees.</p><div class="pricing">
-    <div class="price-box">
-      <h3>Starter Website</h3>
-      <div class="price">$199</div>
-      <p>One-page professional website</p>
-      <p>Mobile responsive</p>
-      <p>SEO-ready structure</p>
-    </div>
-
-    <div class="price-box">
-      <h3>Hosting</h3>
-      <div class="price">$20 <small>/month</small></div>
-      <p>Fast global hosting</p>
-      <p>SSL & basic security</p>
-      <p>Ongoing support</p>
+    <div class="contact">
+      <p>Email: your@email.com</p>
+      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/yourname</a></p>
+      <p>Website: yoursite.com</p>
+      <p>USA</p>
     </div>
   </div>
 
-  <!-- PAYMENT BUTTONS -->
-  <p style="margin-top:40px;">Checkout Options</p>
-  <a href="#" class="button">Pay with PayPal</a>
-  <a href="#" class="button">Pay with Stripe</a>
+  <h2>Professional Summary</h2>
+  <p>
+    Founder and technologist focused on blockchain infrastructure, decentralized finance,
+    and secure web systems. Experienced in building cryptocurrency projects, mining
+    ecosystems, and full-stack web platforms with an emphasis on performance, security,
+    and long-term scalability.
+  </p>
+
+  <h2>Core Skills</h2>
+  <div>
+    <span class="tag">Blockchain Architecture</span>
+    <span class="tag">Cryptocurrency (PoW / SHA-256)</span>
+    <span class="tag">Smart Contract Concepts</span>
+    <span class="tag">Web Development</span>
+    <span class="tag">HTML / CSS / JavaScript</span>
+    <span class="tag">Linux Servers</span>
+    <span class="tag">Mining Infrastructure</span>
+    <span class="tag">GitHub / Open Source</span>
+    <span class="tag">Security & Firewalls</span>
+  </div>
+
+  <h2>Experience</h2>
+
+  <h3>Founder & Lead Developer – Independent Projects</h3>
+  <p><em>2019 – Present</em></p>
+  <ul>
+    <li>Designed and launched blockchain-based cryptocurrency projects and ecosystems.</li>
+    <li>Built and maintained block explorers, mining pools, wallets, and project websites.</li>
+    <li>Managed token economics, supply models, and long-term emission strategies.</li>
+    <li>Handled infrastructure deployment, server hardening, and network security.</li>
+    <li>Published and maintained open-source repositories on GitHub.</li>
+  </ul>
+
+  <h3>Web Developer – Freelance</h3>
+  <p><em>2016 – Present</em></p>
+  <ul>
+    <li>Created SEO-optimized websites for businesses and startups.</li>
+    <li>Built clean, fast, mobile-friendly HTML/CSS layouts.</li>
+    <li>Integrated payment systems, crypto payments, and third-party APIs.</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>X1COIN</strong> – SHA-256 gaming cryptocurrency with mining and explorer infrastructure.</li>
+    <li><strong>Elbanna Blockchain™</strong> – Long-term blockchain architecture focused on speed, scalability, and global infrastructure.</li>
+    <li>Multiple hosted web platforms using GitHub Pages and Cloudflare.</li>
+  </ul>
+
+  <h2>Education</h2>
+  <p>
+    Self-Taught Technologist<br>
+    Continuous study in blockchain systems, cryptography concepts, and financial infrastructure.
+  </p>
+
+  <h2>Additional</h2>
+  <ul>
+    <li>Strong understanding of decentralized systems and economic models.</li>
+    <li>Comfortable working independently from concept to deployment.</li>
+    <li>Focused on long-term vision, infrastructure, and real-world utility.</li>
+  </ul>
+
+  <div class="footer">
+    © Alexander Elbanna
+  </div>
+
 </div>
 
-  </section>  <!-- CTA -->  <section>
-    <div class="content">
-      <h2>Ready to Get Started?</h2>
-      <p>
-        Let’s build something clean, fast, and timeless.
-      </p>
-      <a href="mailto:support@elbanna.com" class="button">CONTACT US</a>
-    </div>
-  </section>  <!-- FOOTER -->  <footer>
-    © 2026 Elbanna Web Design & Development<br />
-    Tampa, Florida 33609
-  </footer></body>
+</body>
 </html>
