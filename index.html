@@ -3,66 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elbanna.xyz</title>
 
-<title>Elbanna Enterprises</title>
+<!-- SEO -->
+<meta name="description" content="Elbanna Treasure & Company - Key West Florida">
+<meta name="keywords" content="Elbanna, Treasure, Key West, Florida, Elbanna.xyz">
+<meta name="author" content="Elbanna">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* Page Reset */
-body{
-    margin:0;
-    background:#000000;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#ffffff;
-    display:flex;
-    min-height:100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Red Vertical Line */
-.left-line{
-    width:3px;
-    background:#cc0000;
+body {
+    background: linear-gradient(180deg, #0b1c2c, #061018);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
-/* Content Area */
-.content{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
 }
 
-/* Text Styling */
-h1{
-    font-size:3rem;
-    font-weight:900;
-    margin:0;
-    color:#ffffff;
+/* Domain Title */
+.domain {
+    font-size: clamp(2rem, 6vw, 4rem);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
-.email{
-    margin-top:15px;
-    font-size:1.2rem;
+/* Logo */
+.logo img {
+    max-width: 420px;
+    width: 90%;
+    height: auto;
+    transition: transform 0.4s ease;
 }
 
-.email a{
-    color:#ffffff;
-    text-decoration:none;
+.logo img:hover {
+    transform: scale(1.05);
 }
 
-.email a:hover{
-    text-decoration:underline;
+/* Subtitle */
+.subtitle {
+    margin-top: 25px;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    opacity: 0.85;
 }
 
-/* Mobile Responsive */
-@media(max-width:600px){
-    h1{
-        font-size:2rem;
-    }
-    .email{
-        font-size:1rem;
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -71,15 +88,26 @@ h1{
 
 <body>
 
-<div class="left-line"></div>
+<div class="container">
 
-<div class="content">
-    <div>
-        <h1>Elbanna Enterprises</h1>
-        <div class="email">
-            <a href="mailto:info@elbanna.xyz">info@elbanna.xyz</a>
-        </div>
+    <div class="domain">
+        elbanna.xyz
     </div>
+
+    <div class="logo">
+        <!-- Replace with your logo filename -->
+        <img src="elbanna_treasure_company_logo_transparent.png" alt="Elbanna Treasure & Company Logo">
+    </div>
+
+    <div class="subtitle">
+        Elbanna Treasure & Company<br>
+        Key West, Florida
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Elbanna.xyz — All Rights Reserved
 </div>
 
 </body>
