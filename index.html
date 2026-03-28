@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elbanna.xyz | Websites in 30 Minutes</title>
+<!-- BASIC -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Elbanna.xyz | Website Design & Development in Key West Florida</title>
+
+<meta name="description" content="Elbanna.xyz provides fast website design, development and SEO services in Key West Florida. Professional websites built in 30 minutes starting at $25.">
+
+<meta name="keywords" content="
+website design key west,
+web developer key west florida,
+key west website designer,
+seo services key west,
+small business websites key west,
+websites in 30 minutes">
+
+<meta name="author" content="Elbanna.xyz">
+
+<!-- LOCAL SEO -->
+<meta name="geo.region" content="US-FL">
+<meta name="geo.placename" content="Key West">
+<meta name="geo.position" content="24.5551;-81.7800">
+<meta name="ICBM" content="24.5551, -81.7800">
+
+<!-- SOCIAL SHARING (OpenGraph) -->
+<meta property="og:title" content="Websites Built in 30 Minutes | Elbanna.xyz">
+<meta property="og:description" content="Professional website design and SEO services in Key West Florida. Launch your business online today for $25.">
+<meta property="og:image" content="https://elbanna.xyz/logo.png">
+<meta property="og:url" content="https://elbanna.xyz">
+<meta property="og:type" content="website">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Elbanna.xyz | Website Design Key West">
+<meta name="twitter:description" content="Fast website design & SEO services in Key West Florida.">
+<meta name="twitter:image" content="https://elbanna.xyz/logo.png">
+
+<!-- GOOGLE BUSINESS STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "Elbanna.xyz",
+ "image": "https://elbanna.xyz/logo.png",
+ "email": "info@elbanna.xyz",
+ "telephone": "+1-813-543-5385",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Key West",
+   "addressRegion": "FL",
+   "addressCountry": "US"
+ },
+ "url": "https://elbanna.xyz",
+ "priceRange": "$25-$1000",
+ "description": "Website design, development and SEO services in Key West Florida."
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -20,16 +75,17 @@ font-family:'Montserrat',sans-serif;
 body{
 background:#000;
 color:#fff;
+line-height:1.6;
 }
 
-/* NAVBAR */
-
+/* NAV */
 .nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
+padding:15px 20px;
 border-bottom:1px solid #1a1a1a;
+flex-wrap:wrap;
 }
 
 .nav h2{
@@ -40,119 +96,98 @@ letter-spacing:2px;
 .contact{
 font-size:14px;
 opacity:.8;
+text-align:right;
 }
 
 /* HERO */
-
 .hero{
 text-align:center;
-padding:100px 20px 60px;
+padding:80px 20px 40px;
 max-width:900px;
 margin:auto;
 }
 
 .logo{
-width:180px;
-margin-bottom:25px;
+width:160px;
+max-width:60%;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:3.2rem;
+font-size:2.8rem;
 font-weight:800;
-line-height:1.2;
 }
 
 .hero p{
-margin-top:20px;
-font-size:1.2rem;
+margin-top:15px;
 opacity:.75;
 }
 
-/* CARD */
-
+/* OFFER */
 .offer{
-margin:60px auto;
-max-width:500px;
+margin:40px 15px;
 background:#0b0b0b;
 border:1px solid #222;
-padding:50px;
+padding:35px 25px;
 border-radius:8px;
-transition:.3s;
-}
-
-.offer:hover{
-border-color:#fff;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .price{
-font-size:4rem;
+font-size:3.5rem;
 font-weight:800;
+text-align:center;
 margin:20px 0;
 }
 
 .features{
 list-style:none;
-margin:30px 0;
-text-align:left;
+margin:25px 0;
 }
 
 .features li{
-padding:12px 0;
+padding:10px 0;
 border-bottom:1px solid #1a1a1a;
 }
 
 /* BUTTON */
-
 .paypal-btn{
 width:100%;
 background:#fff;
 color:#000;
 border:none;
-padding:18px;
+padding:16px;
 font-size:18px;
 font-weight:700;
 cursor:pointer;
-letter-spacing:1px;
 transition:.3s;
 }
 
 .paypal-btn:hover{
-background:#dcdcdc;
-}
-
-/* TRUST SECTION */
-
-.trust{
-text-align:center;
-padding:60px 20px;
-opacity:.8;
-}
-
-.trust h3{
-margin-bottom:10px;
+background:#ddd;
 }
 
 /* FOOTER */
-
 footer{
 border-top:1px solid #1a1a1a;
 text-align:center;
-padding:40px;
+padding:30px 20px;
 font-size:14px;
 opacity:.7;
 }
 
-/* MOBILE */
-
+/* MOBILE OPTIMIZATION */
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.2rem;
+font-size:2rem;
 }
 
-.nav{
-flex-direction:column;
-gap:10px;
+.contact{
+text-align:center;
+margin-top:10px;
 }
 
 }
@@ -162,47 +197,46 @@ gap:10px;
 
 <body>
 
-<!-- NAV -->
+<!-- NAVBAR -->
 <div class="nav">
 <h2>ELBANNA.XYZ</h2>
-
 <div class="contact">
-info@elbanna.xyz • (813) 543-5385
+info@elbanna.xyz<br>
+(813) 543-5385
 </div>
 </div>
 
 <!-- HERO -->
-<div class="hero">
+<section class="hero">
 
-<img src="logo.png" class="logo">
+<img src="logo.png" class="logo" alt="Elbanna.xyz Logo">
 
-<h1>Professional Websites Built<br>In 30 Minutes</h1>
+<h1>Website Design & SEO in Key West Florida</h1>
 
 <p>
-Modern, mobile-responsive business websites designed and launched the same day.
-No contracts. No hassle. Just results.
+Professional business websites built in 30 minutes.
+Mobile optimized. SEO ready. Built for local growth.
 </p>
 
-</div>
+</section>
 
 <!-- OFFER -->
-<div class="offer">
+<section class="offer">
 
 <h2 style="text-align:center;">Launch Special</h2>
 
-<div class="price" style="text-align:center;">$25</div>
+<div class="price">$25</div>
 
 <ul class="features">
-<li>✔ Mobile Responsive Website</li>
+<li>✔ Mobile Responsive Design</li>
+<li>✔ Local SEO Setup</li>
+<li>✔ Same Day Delivery</li>
 <li>✔ Business Landing Page</li>
-<li>✔ SEO Ready Structure</li>
-<li>✔ Fast Deployment</li>
-<li>✔ Delivered Same Day</li>
-<li>✔ Built By Real Developer</li>
+<li>✔ Fast Hosting Ready</li>
+<li>✔ Built by Elbanna.xyz</li>
 </ul>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="seashells953@gmail.com">
 <input type="hidden" name="item_name" value="Website in 30 Minutes - Elbanna.xyz">
@@ -210,20 +244,13 @@ No contracts. No hassle. Just results.
 <input type="hidden" name="currency_code" value="USD">
 
 <input type="submit" value="GET MY WEBSITE NOW" class="paypal-btn">
-
 </form>
 
-</div>
-
-<!-- TRUST -->
-<div class="trust">
-<h3>Key West • Tampa • Remote Clients Nationwide</h3>
-<p>Website Design • Development • SEO</p>
-</div>
+</section>
 
 <footer>
-© 2026 ELBANNA.XYZ — All Rights Reserved<br>
-info@elbanna.xyz | (813) 543-5385
+© 2026 ELBANNA.XYZ — Website Design • Development • SEO<br>
+Key West Florida | info@elbanna.xyz | (813) 543-5385
 </footer>
 
 </body>
