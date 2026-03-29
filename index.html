@@ -4,17 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elbanna.xyz | Crypto Consulting</title>
+<title>Elbanna.xyz | Website Development & Crypto Consulting</title>
+
+<meta name="description" content="Professional website development, crypto consulting, and mining services in Key West Florida. Military and Police discounts available.">
 
 <style>
+
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#0b1a1f;
 color:white;
 text-align:center;
 }
 
+/* NAVIGATION */
 nav{
 background:#000;
 padding:15px;
@@ -27,17 +31,24 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* HERO */
 header{
-padding:70px 20px;
+padding:80px 20px;
 background:linear-gradient(135deg,#001f2f,#003b46);
 }
 
-.section{
-padding:50px 20px;
-max-width:900px;
-margin:auto;
+h1{
+font-size:42px;
+letter-spacing:2px;
+margin-bottom:10px;
 }
 
+.tagline{
+font-size:20px;
+color:#ffd700;
+}
+
+/* BUTTONS */
 .btn{
 background:#ffd700;
 color:black;
@@ -47,60 +58,160 @@ font-weight:bold;
 border-radius:8px;
 text-decoration:none;
 display:inline-block;
-margin-top:25px;
+margin:12px;
+border:none;
+cursor:pointer;
 }
 
+.btn:hover{
+background:#ffea55;
+}
+
+/* SECTIONS */
+.section{
+padding:60px 20px;
+max-width:950px;
+margin:auto;
+}
+
+.features{
+text-align:left;
+display:inline-block;
+line-height:1.9;
+font-size:18px;
+}
+
+/* DISCOUNT BOX */
+.discount{
+background:#00131a;
+border:2px solid #ffd700;
+border-radius:10px;
+padding:30px;
+margin-top:40px;
+}
+
+/* CONTACT */
 .contact{
 background:#00131a;
 padding:40px;
 }
 
+/* FOOTER */
 footer{
 padding:20px;
-color:#aaa;
 font-size:14px;
+color:#aaa;
 }
 
 @media(max-width:600px){
-header h1{font-size:28px;}
+h1{font-size:30px;}
+.tagline{font-size:18px;}
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- MENU -->
 <nav>
 <a href="index.html">Home</a>
 <a href="mining.html">Mining Services</a>
 </nav>
 
+<!-- HERO -->
 <header>
+
 <h1>ELBANNA.XYZ</h1>
-<p>Crypto Consulting • Website Development • Mining Services</p>
+
+<p class="tagline">
+Websites Built Fast • Crypto Strategy • Mining Infrastructure
+</p>
 
 <a class="btn" href="mining.html">⚡ Rent Mining Power</a>
+
 </header>
 
+<!-- WEBSITE DEVELOPMENT SECTION -->
 <div class="section">
 
-<h2>Crypto Strategy & Website Launch</h2>
+<h2>🚀 Website Development & Launch</h2>
 
 <p>
-Crypto consulting, blockchain guidance, and professional website deployment.
-Fast. Simple. Done for you.
+Professional websites built quickly and correctly — optimized for mobile,
+Google search, and real business growth.
 </p>
+
+<div class="features">
+✔ 1-Page Professional Website<br>
+✔ Mobile Responsive Design<br>
+✔ Logo Integration<br>
+✔ Hosting Setup Assistance<br>
+✔ Basic SEO Optimization<br>
+✔ Crypto Payment Ready<br>
+✔ Key West Local SEO Setup<br>
+✔ Fast Deployment Under Elbanna.xyz
+</div>
+
+<br><br>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="seashells953@gmail.com">
-<input type="hidden" name="item_name" value="Crypto Consulting & Website Package">
+<input type="hidden" name="item_name" value="Website Development & Crypto Consulting Package">
 <input type="hidden" name="amount" value="100.00">
 <input type="hidden" name="currency_code" value="USD">
-<input class="btn" type="submit" value="Checkout $100">
+
+<input class="btn" type="submit" value="Launch My Website — $100">
 </form>
 
 </div>
 
+<!-- CRYPTO CONSULTING -->
+<div class="section">
+
+<h2>🔗 Crypto Consulting</h2>
+
+<p>
+Algorithm selection, mining setup, blockchain guidance,
+wallet creation, and infrastructure consulting.
+</p>
+
+<div class="features">
+✔ GhostRider / RandomX / SHA-256 / KawPow / K12<br>
+✔ Mining Optimization Guidance<br>
+✔ Wallet Setup (FREE After Purchase)<br>
+✔ Project Launch Strategy<br>
+✔ Beginner → Advanced Support
+</div>
+
+</div>
+
+<!-- DISCOUNTS -->
+<div class="section discount">
+
+<h2>🇺🇸 Military & Law Enforcement Discount</h2>
+
+<p>
+To those who serve and protect our communities —
+<strong>50% OFF</strong> website development and consulting services.
+</p>
+
+<p><strong>Discounted Price: $50</strong></p>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="seashells953@gmail.com">
+<input type="hidden" name="item_name" value="Military & Police Discount Package">
+<input type="hidden" name="amount" value="50.00">
+<input type="hidden" name="currency_code" value="USD">
+
+<input class="btn" type="submit" value="Military / Police Checkout">
+</form>
+
+</div>
+
+<!-- CONTACT -->
 <div class="contact">
 <h3>Contact</h3>
 <p>info@elbanna.xyz</p>
@@ -108,7 +219,7 @@ Fast. Simple. Done for you.
 </div>
 
 <footer>
-© 2026 Elbanna.xyz
+© 2026 Elbanna.xyz — Website Development • Crypto Consulting • Mining Services
 </footer>
 
 </body>
