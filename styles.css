@@ -7,7 +7,7 @@ font-family:'Montserrat',sans-serif;
 
 body{
 background:#0a0a0a;
-color:#fff;
+color:white;
 line-height:1.6;
 }
 
@@ -16,40 +16,60 @@ line-height:1.6;
 .nav{
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
+align-items:center;
+padding:15px 20px;
 background:#000;
 position:sticky;
 top:0;
-z-index:100;
+z-index:1000;
 }
 
-.logo{
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-img{
+height:40px;
+}
+
+.logo-text{
 font-weight:900;
-font-size:22px;
 letter-spacing:2px;
 }
 
-.logo span{
+.logo-text span{
 color:#00ffc3;
+}
+
+nav{
+display:flex;
+gap:20px;
 }
 
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
 font-weight:700;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
 }
 
 /* HERO */
 
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:80px 20px 60px;
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
 url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
@@ -58,20 +78,20 @@ background-position:center;
 }
 
 .hero h1{
-font-size:64px;
+font-size:clamp(36px,8vw,64px);
+line-height:1.1;
 font-weight:900;
-text-transform:uppercase;
 }
 
 .tagline{
 margin-top:15px;
-opacity:.8;
+opacity:.85;
 }
 
 .cta{
 margin-top:30px;
 background:linear-gradient(45deg,#00ffc3,#0077ff);
-padding:15px 30px;
+padding:14px 28px;
 border-radius:40px;
 text-decoration:none;
 color:#000;
@@ -86,13 +106,12 @@ color:#000;
 text-align:center;
 padding:10px;
 font-weight:700;
-letter-spacing:2px;
 }
 
 /* SERVICES */
 
 .services{
-padding:80px 40px;
+padding:80px 20px;
 text-align:center;
 }
 
@@ -143,7 +162,7 @@ text-decoration:none;
 /* REVIEWS */
 
 .reviews{
-padding:80px 40px;
+padding:80px 20px;
 text-align:center;
 }
 
@@ -171,6 +190,43 @@ footer{
 background:#000;
 text-align:center;
 padding:20px;
-margin-top:40px;
-font-size:14px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#000;
+flex-direction:column;
+align-items:center;
+display:none;
+padding:20px 0;
+}
+
+nav.active{
+display:flex;
+}
+
+.hero{
+padding-top:120px;
+}
+
+.cards,
+.review-grid{
+grid-template-columns:1fr;
+}
+
+.price-box{
+width:90%;
+}
+
 }
