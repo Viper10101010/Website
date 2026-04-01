@@ -7,7 +7,7 @@
 
 <title>Elbanna Creative | Key West Web Design</title>
 
-<meta name="description" content="Bold creative websites, branding, and design for Key West businesses. Built different. $500 flat websites.">
+<meta name="description" content="Key West website design, branding, logo design, SEO and mobile responsive business websites. Elbanna Creative.">
 
 <link rel="stylesheet" href="styles.css">
 
@@ -17,15 +17,23 @@
 
 <body>
 
-<header class="nav">
-    <div class="logo">ELBANNA<span>CREATIVE</span></div>
+<!-- NAVIGATION -->
 
-    <nav>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Start</a>
-    </nav>
+<header class="nav">
+
+<div class="logo-wrap">
+<img src="logo.png" alt="Elbanna Creative Logo" class="logo-img">
+<div class="logo-text">ELBANNA<span>CREATIVE</span></div>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="mobileMenu">
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Start</a>
+</nav>
+
 </header>
 
 <!-- HERO -->
@@ -39,7 +47,7 @@ Creative Power.
 </h1>
 
 <p class="tagline">
-Local Key West Businesses
+Bold creative websites for Key West businesses. Built different.
 </p>
 
 <a class="cta"
@@ -53,7 +61,7 @@ Launch My Website — $500
 <!-- STRIP -->
 
 <section class="strip">
-<p>⚡ MOBILE FIRST ⚡ SEO READY ⚡ BUILT DIFFERENT ⚡ KEY WEST LOCAL ⚡</p>
+<p>⚡ MOBILE FIRST ⚡ SEO READY ⚡ KEY WEST LOCAL ⚡ BRAND BUILT ⚡</p>
 </section>
 
 <!-- SERVICES -->
@@ -66,22 +74,22 @@ Launch My Website — $500
 
 <div class="card">
 <h3>Website Design</h3>
-<p>Fast, modern, mobile-first websites designed to convert visitors into customers.</p>
+<p>Modern mobile-responsive business websites built to convert visitors into customers.</p>
 </div>
 
 <div class="card">
 <h3>Logo Design</h3>
-<p>Street-ready logos with strong identity and timeless branding style.</p>
+<p>Bold logos designed with street creativity and professional branding principles.</p>
 </div>
 
 <div class="card">
-<h3>Brand Identity</h3>
-<p>Color systems, typography, and full company branding packages.</p>
+<h3>Company Branding</h3>
+<p>Full identity systems including colors, typography, and brand direction.</p>
 </div>
 
 <div class="card">
-<h3>Apparel & Merch</h3>
-<p>T-shirt graphics, surf brand aesthetics, and print-ready designs.</p>
+<h3>T-Shirt & Merch Design</h3>
+<p>Creative apparel graphics inspired by skate, surf, and street culture.</p>
 </div>
 
 </div>
@@ -92,17 +100,17 @@ Launch My Website — $500
 
 <section class="pricing">
 
-<h2>Simple. Honest. Flat.</h2>
+<h2>Simple Flat Pricing</h2>
 
 <div class="price-box">
 
-<h3>$500 Website</h3>
+<h3>$500 Business Website</h3>
 
 <ul>
-<li>Mobile Responsive</li>
+<li>Mobile Responsive Design</li>
 <li>SEO Setup</li>
 <li>Google Reviews Integration</li>
-<li>Modern Creative Design</li>
+<li>Fast Delivery</li>
 <li>No Monthly Fees</li>
 </ul>
 
@@ -120,23 +128,23 @@ Checkout with PayPal
 
 <section id="reviews" class="reviews">
 
-<h2>Client Love — Elbanna.xyz</h2>
+<h2>Client Experience — 199Creative LLC</h2>
 
 <div class="review-grid">
 
 <div class="review">
 ★★★★★
-<p>“Creative, fast, and extremely professional. Our business finally looks legit online.”</p>
+<p>Creative, fast, and extremely professional. Our business finally looks legit online.</p>
 </div>
 
 <div class="review">
 ★★★★★
-<p>“Best designer we've worked with. Branding was next level.”</p>
+<p>Branding and website exceeded expectations. Highly recommended.</p>
 </div>
 
 <div class="review">
 ★★★★★
-<p>“SEO improvements brought real customers.”</p>
+<p>SEO improvements brought real customers within weeks.</p>
 </div>
 
 </div>
@@ -150,10 +158,10 @@ Checkout with PayPal
 <h2>Start Your Project</h2>
 
 <p>Email: info@elbanna.xyz</p>
-<p>Key West, Florida</p>
+<p>Phone: (813) 543-5385</p>
+<p>Serving Key West, Florida Businesses</p>
 
-<a class="cta"
-href="mailto:info@elbanna.xyz">
+<a class="cta" href="mailto:info@elbanna.xyz">
 Let’s Build Something
 </a>
 
@@ -162,6 +170,13 @@ Let’s Build Something
 <footer>
 <p>© 2026 ELBANNA CREATIVE</p>
 </footer>
+
+<script>
+function toggleMenu(){
+const menu = document.getElementById("mobileMenu");
+menu.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
