@@ -1,7 +1,3 @@
-/* =========================
-   GLOBAL RESET
-========================= */
-
 *{
 margin:0;
 padding:0;
@@ -13,22 +9,19 @@ body{
 background:#0a0a0a;
 color:white;
 line-height:1.6;
-padding-top:80px; /* prevents header overlap */
+padding-top:80px;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAVBAR */
 
 .nav{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:15px 20px;
 background:#000;
 position:fixed;
 top:0;
-left:0;
 width:100%;
 z-index:9999;
 }
@@ -40,51 +33,37 @@ gap:10px;
 }
 
 .logo-img{
-height:42px;
+height:48px;
 width:auto;
 }
 
 .logo-text{
 font-weight:900;
 letter-spacing:2px;
-font-size:18px;
-white-space:nowrap;
 }
 
 .logo-text span{
 color:#00ffc3;
 }
 
-/* DESKTOP MENU */
-
 nav{
 display:flex;
 gap:25px;
-align-items:center;
 }
 
 nav a{
-text-decoration:none;
 color:white;
+text-decoration:none;
 font-weight:700;
-transition:.3s;
 }
-
-nav a:hover{
-color:#00ffc3;
-}
-
-/* HAMBURGER */
 
 .menu-toggle{
 display:none;
-font-size:30px;
+font-size:28px;
 cursor:pointer;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO */
 
 .hero{
 min-height:calc(100vh - 80px);
@@ -95,189 +74,76 @@ align-items:center;
 text-align:center;
 padding:40px 20px;
 gap:20px;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
 url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-size:clamp(32px,9vw,64px);
-line-height:1.15;
+font-size:clamp(32px,8vw,64px);
 font-weight:900;
-max-width:900px;
 }
 
 .tagline{
 max-width:600px;
-font-size:clamp(16px,4vw,20px);
 opacity:.9;
 }
 
-/* CTA BUTTON */
-
 .cta{
-display:inline-block;
-margin-top:10px;
+background:#00ffc3;
+color:black;
 padding:16px 30px;
 border-radius:40px;
-font-size:18px;
-font-weight:900;
-text-align:center;
 text-decoration:none;
-color:#000;
-background:linear-gradient(45deg,#00ffc3,#0077ff);
-transition:.3s;
-white-space:nowrap;
+font-weight:900;
 }
 
-.cta:hover{
-transform:scale(1.05);
-}
+/* SECTIONS */
 
-/* =========================
-   STRIP BAR
-========================= */
-
-.strip{
-background:#00ffc3;
-color:#000;
-text-align:center;
-padding:12px;
-font-weight:800;
-letter-spacing:1px;
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services{
+.services,.pricing,.reviews,.contact{
 padding:80px 20px;
 text-align:center;
 }
 
-.services h2{
-font-size:36px;
-margin-bottom:30px;
-}
-
-/* GRID FIX */
-
-.cards{
+.cards,.review-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 }
 
-.card{
+.card,.review,.price-box{
 background:#111;
 padding:30px;
 border-radius:12px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-background:#151515;
-}
-
-/* =========================
-   PRICING
-========================= */
-
-.pricing{
-text-align:center;
-padding:80px 20px;
-}
-
-.price-box{
-background:#111;
-display:inline-block;
-padding:40px;
-border-radius:15px;
-max-width:500px;
-width:100%;
 }
 
 .buy{
 display:inline-block;
 margin-top:20px;
 background:#00ffc3;
-color:#000;
+color:black;
 padding:15px 30px;
 border-radius:30px;
-font-weight:900;
 text-decoration:none;
-transition:.3s;
-}
-
-.buy:hover{
-transform:scale(1.05);
-}
-
-/* =========================
-   REVIEWS
-========================= */
-
-.reviews{
-padding:80px 20px;
-text-align:center;
-}
-
-.review-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-max-width:1200px;
-margin:auto;
-}
-
-.review{
-background:#111;
-padding:25px;
-border-radius:10px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact{
-text-align:center;
-padding:80px 20px;
+font-weight:900;
 }
 
 footer{
 background:#000;
-text-align:center;
 padding:20px;
-margin-top:40px;
+text-align:center;
 }
 
-/* =========================
-   GLOBAL OVERLAP FIX
-========================= */
+/* MOBILE */
 
-a, button{
-max-width:100%;
-word-wrap:break-word;
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media (max-width:768px){
+@media(max-width:768px){
 
 .menu-toggle{
 display:block;
 }
-
-/* MOBILE MENU */
 
 nav{
 position:absolute;
@@ -286,35 +152,22 @@ left:0;
 width:100%;
 background:#000;
 flex-direction:column;
-gap:15px;
 display:none;
-padding:25px 0;
-border-top:1px solid #222;
+padding:20px 0;
 }
 
 nav.active{
 display:flex;
 }
 
-nav a{
-font-size:18px;
-padding:10px 0;
-}
-
-/* HERO MOBILE */
-
-.hero{
-padding-top:20px;
-}
-
-.cards,
-.review-grid{
+.cards,.review-grid{
 grid-template-columns:1fr;
 }
 
-.price-box{
-width:90%;
-margin:auto;
+.logo-img{
+height:36px;
+}
+
 }
 
 }
